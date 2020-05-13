@@ -1,0 +1,9 @@
+btree_test*
+randomgenerator_test*
+tpccclient_test*
+tpcctables_test*
+tpccgenerator_test*
+tpcc*
+clock*
+randomgenerator*
+stupidunit*
