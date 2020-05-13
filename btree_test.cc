@@ -1,6 +1,7 @@
 #include "btree.h"
 
 #include <map>
+#include <algorithm>
 
 #include "assert.h"
 #include "stupidunit.h"

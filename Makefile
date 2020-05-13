@@ -1,12 +1,14 @@
-WARNINGS = -Werror -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter
+CC=g++
+
+WARNINGS = -Werror -Wall -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-but-set-variable
 
 # gcc flags used for both debug and opt builds
 BASE_CXX_FLAGS := -MD $(CXXFLAGS) $(WARNINGS) -std=c++11
 
 # Debug flags
-CXXFLAGS = -g $(BASE_CXX_FLAGS)
+#CXXFLAGS = -g $(BASE_CXX_FLAGS)
 # Optimization flags
-#CXXFLAGS = -g -O3 -DNDEBUG $(BASE_CXX_FLAGS)
+CXXFLAGS = -g -O3 -DNDEBUG $(BASE_CXX_FLAGS)
 
 # Link with the C++ standard library
 LDFLAGS=-lstdc++
